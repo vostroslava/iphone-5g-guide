@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081622">
+  <meta name="description" content="Пошаговый гайд по установке CarrierSIM на iPhone с Mac или Windows: скачать, подключить, проверить и вернуть настройки.">
+  <title>5G на iPhone — гайд по CarrierSIM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="#top" aria-label="В начало">5G<span> / </span>iPhone</a>
+    <a class="toplink" href="#guide">Перейти к гайду <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <h1>5G на iPhone.<br><em>Разбираем по шагам.</em></h1>
+        <p class="lead">Способ для Беларуси и России через CarrierSIM. На iPhone 16 Pro с SIM МТС Беларусь после установки появился значок 5G.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="downloads/CarrierSIM-v2-macOS-Windows.zip" download>Скачать архив <span aria-hidden="true">↓</span></a>
+          <a class="button subtle" href="#guide">Открыть инструкцию <span aria-hidden="true">↘</span></a>
+        </div>
+        <p class="micro">Архив CarrierSIM v2 · Mac и Windows · 218 КБ</p>
+      </div>
+      <div class="hero-visual" aria-label="Реальный скриншот iPhone со значком 5G">
+        <div class="phone-shot"><img src="assets/iphone-5g.jpg" alt="Скриншот iPhone 16 Pro в сети МТС со значком 5G" width="588" height="500"></div>
+        <div class="proof-label"><span class="dot"></span> Реальный экран · МТС Беларусь</div>
+      </div>
+    </section>
+
+    <section class="quick wrap" aria-label="Коротко о процессе">
+      <p class="section-tag">В двух словах</p>
+      <div class="quick-grid">
+        <div><strong>01</strong><span>Скачайте и распакуйте</span></div>
+        <div><strong>02</strong><span>Подключите iPhone кабелем</span></div>
+        <div><strong>03</strong><span>В меню нажмите 3 → 2 → 1</span></div>
+        <div><strong>04</strong><span>Проверьте 5G на телефоне</span></div>
+      </div>
+    </section>
+
+    <section class="guide wrap" id="guide">
+      <div class="section-heading">
+        <p class="section-tag">Пошаговая инструкция</p>
+        <h2>Повторите на своём компьютере</h2>
+        <p>Начните с подготовки. Затем выберите свою систему — остальные шаги одинаковые.</p>
+      </div>
+
+      <div class="notice"><strong>Перед началом.</strong> Сделайте обычную резервную копию iPhone. Нужны активная SIM/eSIM, кабель, интернет для первого запуска и разблокированный телефон. Этот комплект предназначен для iPhone; на iPad мы его не устанавливали.</div>
+
+      <div class="system-tabs" role="tablist" aria-label="Операционная система">
+        <button class="tab active" type="button" role="tab" id="tab-mac" aria-selected="true" aria-controls="panel-mac" data-tab="mac">У меня Mac</button>
+        <button class="tab" type="button" role="tab" id="tab-win" aria-selected="false" aria-controls="panel-win" data-tab="win">У меня Windows</button>
+      </div>
+
+      <div class="system-panel" id="panel-mac" role="tabpanel" aria-labelledby="tab-mac">
+        <ol class="steps">
+          <li><span class="step-no">1</span><div><h3>Подготовьте Mac</h3><p>Установите <a href="https://www.python.org/downloads/macos/" target="_blank" rel="noopener noreferrer">Python 3.11 или новее</a>. Он нужен программе, но команды вводить не придётся. Если Python уже установлен, переходите дальше.</p></div></li>
+          <li><span class="step-no">2</span><div><h3>Скачайте архив и распакуйте</h3><p>Нажмите кнопку скачивания на этой странице. Откройте ZIP и перенесите всю папку <b>CarrierSIM</b> в «Загрузки». Не запускайте файл прямо из окна архива.</p><a class="text-link" href="downloads/CarrierSIM-v2-macOS-Windows.zip" download>Скачать CarrierSIM v2 ↓</a></div></li>
+          <li><span class="step-no">3</span><div><h3>Подключите iPhone</h3><p>Подключите телефон кабелем, разблокируйте, нажмите «Доверять этому компьютеру» и дождитесь, пока Finder завершит синхронизацию.</p></div></li>
+          <li><span class="step-no">4</span><div><h3>Откройте «Запуск macOS.command»</h3><p>Откройте этот файл в папке CarrierSIM. При первом запуске программа установит свои компоненты — дождитесь появления русского меню. Если Mac заблокировал открытие, смотрите раздел «Если не получилось» ниже.</p></div></li>
+        </ol>
+        <figure class="screen-figure folder-shot"><img src="assets/mac-folder.png" alt="Содержимое распакованной папки CarrierSIM с файлами Запуск macOS.command и Запуск Windows.cmd" loading="lazy" width="1430" height="420"><figcaption>После распаковки папка выглядит так. На Mac откройте «Запуск macOS.command».</figcaption></figure>
+        <figure class="screen-figure"><img src="assets/mac-menu-crop.png" alt="Реальное меню CarrierSIM на Mac: пункты 1, 2, 3, 4, 5 и 6" loading="lazy" width="1710" height="760"><figcaption>Так выглядит меню программы на Mac. Снимок сделан без подключения iPhone и без повторной установки.</figcaption></figure>
+      </div>
+
+      <div class="system-panel" id="panel-win" role="tabpanel" aria-labelledby="tab-win" hidden>
+        <div class="notice amber"><strong>Windows пока не проверена нами на живом телефоне.</strong> Шаги ниже соответствуют инструкции автора CarrierSIM.</div>
+        <ol class="steps">
+          <li><span class="step-no">1</span><div><h3>Подготовьте Windows</h3><p>Установите <a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener noreferrer">Python 3.11 или новее, x64</a> и настольный <a href="https://www.apple.com/itunes/" target="_blank" rel="noopener noreferrer">iTunes для Windows x64 с сайта Apple</a> с компонентами Apple. Версия из Microsoft Store и приложение Apple Devices не заявлены как поддерживаемые этим архивом.</p></div></li>
+          <li><span class="step-no">2</span><div><h3>Распакуйте архив полностью</h3><p>Скачайте ZIP и извлеките всю папку CarrierSIM в «Загрузки» или другую папку, где можно сохранять файлы.</p><a class="text-link" href="downloads/CarrierSIM-v2-macOS-Windows.zip" download>Скачать CarrierSIM v2 ↓</a></div></li>
+          <li><span class="step-no">3</span><div><h3>Подключите iPhone</h3><p>Подключите кабелем, разблокируйте и нажмите «Доверять». Дождитесь окончания синхронизации iTunes.</p></div></li>
+          <li><span class="step-no">4</span><div><h3>Откройте «Запуск Windows.cmd»</h3><p>Запустите файл двойным щелчком в распакованной папке. При первом запуске нужен интернет для установки компонентов программы.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="menu-guide">
+        <div class="menu-copy"><p class="section-tag">В окне программы</p><h2>Три цифры: 3 → 2 → 1</h2><p>Выберите пункт, дождитесь результата и нажмите Enter, чтобы вернуться в меню.</p></div>
+        <div class="menu-list">
+          <div><b>3</b><span><strong>Проверить компьютер и файлы</strong><small>Если есть ошибка — прочитайте сообщение и исправьте её до установки.</small></span></div>
+          <div><b>2</b><span><strong>Посмотреть SIM и план установки</strong><small>Убедитесь, что показаны ваш iPhone и нужное число SIM.</small></span></div>
+          <div><b>1</b><span><strong>Установить профиль</strong><small>Не отключайте кабель. Дождитесь строки «Готово» и подтверждения подписи.</small></span></div>
+        </div>
+      </div>
+
+      <figure class="screen-figure check-shot"><img src="assets/mac-check.png" alt="Реальный результат пункта 3: программа подтвердила доступность файлов и библиотек Apple" loading="lazy" width="1710" height="730"><figcaption>Пример проверки компьютера на Mac. Пункт 3 не изменяет iPhone.</figcaption></figure>
+
+      <div class="finish">
+        <p class="section-tag">На iPhone после установки</p>
+        <h2>Проверьте результат</h2>
+        <ol>
+          <li>Включите авиарежим на 15 секунд и выключите.</li>
+          <li>Откройте «Настройки → Сотовая связь → нужная SIM → Голос и данные» и проверьте, появился ли пункт 5G.</li>
+          <li>Проверьте мобильный интернет и обычный звонок. При наличии покрытия посмотрите, появился ли значок 5G в строке состояния.</li>
+        </ol>
+        <p class="fine">Успешная установка профиля и пункт 5G в настройках не гарантируют подключение к сети 5G. Покрытие, оператор, тариф, модель и iOS влияют на результат. Способ не открывает все 5G-диапазоны.</p>
+      </div>
+    </section>
+
+    <section class="help wrap" id="help">
+      <div class="section-heading"><p class="section-tag">Если что-то пошло не так</p><h2>Частые вопросы</h2></div>
+      <details><summary>Mac не открывает файл запуска</summary><div>Попробуйте открыть файл один раз. Затем зайдите в «Системные настройки → Конфиденциальность и безопасность», найдите сообщение о заблокированном файле и нажмите «Всё равно открыть». Если Mac прямо сообщает о вредоносном ПО, не обходите предупреждение: скачайте архив заново из проверенного источника. <a href="https://support.apple.com/ru-ru/102445" target="_blank" rel="noopener noreferrer">Инструкция Apple ↗</a></div></details>
+      <details><summary>Mac пишет «Permission denied»</summary><div>У файла запуска нет права на выполнение. Откройте Terminal, введите <code>chmod u+x </code> с пробелом в конце, перетащите файл «Запуск macOS.command» в окно Terminal и нажмите Enter. Затем снова откройте файл двойным щелчком. Команда касается только выбранного файла.</div></details>
+      <details><summary>Программа не видит iPhone</summary><div>Разблокируйте телефон, переподключите кабель, подтвердите «Доверять» и дождитесь синхронизации Finder или iTunes. Подключение должно быть по USB.</div></details>
+      <details><summary>В окне написано, что нужен Python или компоненты Apple</summary><div>Установите программы из шага 1 для вашей системы, затем снова откройте файл запуска. На Windows нужен Python x64 и настольный iTunes x64 с библиотеками Apple.</div></details>
+      <details><summary>Установка прервалась</summary><div>Сохраните папку <code>runs</code> внутри CarrierSIM. Повторно откройте программу и выберите пункт <b>5 — «Восстановить после сбоя»</b>. Не публикуйте папку runs: в ней могут быть идентификаторы телефона и SIM.</div></details>
+      <details><summary>Как вернуть штатные настройки?</summary><div>Подключите тот же iPhone, откройте программу и выберите пункт <b>4 — «Вернуть штатные профили»</b>. Дождитесь завершения и снова включите авиарежим на 15 секунд. Это удаляет ссылки, созданные способом, а не стирает данные телефона.</div></details>
+      <details><summary>Профиль установился, а 5G нет</summary><div>Проверьте настройку «Голос и данные», покрытие и тариф. Скрипт меняет операторский профиль, но не создаёт покрытие и не снимает региональные ограничения частот. В России мы пока не проводили полевой тест.</div></details>
+    </section>
+
+    <section class="agent wrap" id="agent">
+      <div><p class="section-tag">Вариант с ИИ-агентом</p><h2>Попросить помочь с установкой</h2><p>Агент с доступом к вашему компьютеру может помочь пройти подготовку и объяснить ошибки. Подтверждения на iPhone и проверка результата остаются за вами. Этот маршрут мы ещё отдельно проверяем.</p></div>
+      <div class="prompt-box"><p>Скопируйте запрос и приложите архив:</p><blockquote id="agent-prompt">Помоги установить CarrierSIM на мой iPhone по README в приложенном архиве. Сначала проверь систему и зависимости, затем объясняй каждый шаг простыми словами. Перед изменением телефона покажи, какой iPhone и SIM найдены, и попроси меня подтвердить. Не публикуй мои идентификаторы и папку runs. После установки проверь вывод программы и объясни, как вернуть штатный профиль.</blockquote><button class="copy" type="button" data-copy="agent-prompt">Скопировать запрос</button></div>
+    </section>
+  </main>
+
+  <footer class="footer wrap"><p>CarrierSIM разработал Vladimir B / vl_w. <a href="https://4pda.to/forum/index.php?showtopic=1055886&amp;st=2540#entry145261196" target="_blank" rel="noopener noreferrer">Оригинальный пост на 4PDA ↗</a></p><p>Проверено нами: iPhone 16 Pro, iOS 27.0, МТС Беларусь, Mac. Последнее обновление гайда: 28.09.2026.</p><p class="hash">SHA-256 архива: e3935bf709caf8cf0a0f038164287c84abd7c8fefc35e0f52c86b8958611b767</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
